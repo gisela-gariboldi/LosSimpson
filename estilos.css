@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Schoolbell&display=swap');
+
+#top {
+    background-image: url('fondo.jpg');
+    font-family: 'Schoolbell', cursive;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 211, 31, 0.94);
+    box-shadow: 3px 3px 3px 1px rgba(255, 255, 255, .6);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    list-style: none;
+    height: 40px;
+    max-height: 40px;
+    padding: 20px 60px;
+    width: 100%;
+}
+
+li {
+    padding: 20px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    letter-spacing: 1.6;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    transition-property: font-size;
+    transition-duration: 1s;
+}
+
+nav ul li a:hover {
+    font-size: 22px;
+}
+
+#sectionDataCharacters {
+    padding: 60px;
+}
+
+.container-data {
+    text-align: center;
+    background-color: #c02f74;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 1px rgba(255, 255, 255, .6);
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 30px 20px 60px;
+}
+
+.container-data h1 {
+    font-size: 36px;
+}
+
+.container-data a {
+    color: white;
+    text-decoration: none;
+}
+
+.image-one {
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+}
+
+/* Diseño responsivo para tablets */
+@media all and (min-width:600px) and (max-width:1023px) {
+    header, section {
+        width: 580px;
+    }
+
+    #sectionDataCharacters {
+        width: auto;
+    }
+        
+}
+
+/* Diseño responsivo para celulares */
+@media all and (max-width: 599px) {
+    header, section {
+        width: 90%; 
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        height: 90px;
+        max-height: 90px;
+        padding: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+    #sectionDataCharacters {
+        width: auto;
+        padding: 80px;
+    }
+
+}
